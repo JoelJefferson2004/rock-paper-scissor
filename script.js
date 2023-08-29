@@ -1,5 +1,3 @@
-// Computer's play 
-
 function getComputerChoice(){
     const choice = Math.floor(Math.random() * 3) + 1;
     switch(choice){
@@ -8,8 +6,6 @@ function getComputerChoice(){
         case 3: return "scissor";
     }
 }
-
-// Getting player input, (recursive)
 
 function getPlayerChoice(){
     let choice = prompt('Enter you play: ');
@@ -28,13 +24,16 @@ function playRound(computerChoice, playerChoice){
     if(computerChoice == playerChoice){
         return "It is a draw!";
     }
+
+    // in the given sequence in the list "options",  any option will be beaten by the one next to it.
+
     if(options.indexOf(computerChoice) == (options.indexOf(playerChoice) + 1) % 3){
         return "You Lost";
     }
     return "You Won";
 }
 
-function game(){
+function playGame(){
     let computerWins = 0;
     let playerWins = 0;
     for(let i =0 ; i < 5; i ++){
@@ -60,5 +59,3 @@ function game(){
     }
     return "You Lost";
 }
-
-console.log(game());
