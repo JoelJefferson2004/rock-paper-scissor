@@ -4,8 +4,42 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="header">Rock Paper Scissor</div>
+        <div class="main">
+            <div class="results">
+                <p class="message"> First to five wins</p>
+                <div class="players">
+                    <div class="players-container">
+                        <div class="player">
+                            <div class="choice"></div>
+                            <p>Player <span class="score">0</span></p>
+                        </div>
+                        <div class="computer">
+                            <div class="choice"></div>
+                            <p>Computer <span class="score">0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="options">
+                <div class="dummy"></div>
+                <div class="container">
+                    <img id = "#rock" class="rock" src="images/rock.png">
+                    <img id = "#paper" class="paper" src="images/paper.png">
+                    <img id = "#scissor" class="scissor" src="images/scissors.png">
+                </div>
+                <div class="dummy"></div>
+
+            </div>
+        </div>
+        <div class="footer">Copyright © 2023 theodinproject
+        </div>
         <script src="script.js"></script>
     </body>
 </html>

@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+
+    height: 100%;
+    background-color:#FFEA00 ;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    gap: 40px;
+
+}
+p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header{
+    font-family: 'Press Start 2P', cursive;
+    padding: 20px;
+    font-size: 39px;
+    font-weight: bold;
+}
+.main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+.main .message{
+    font-size: 30px;
+    font-weight: bold;
+}
+.computer p, .player p{
+    /* font-weight: bold; */
+    font-size: 25px;
+}
+.main .results{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main .results .players{
+    display: flex;
+    justify-content: center;
+
+}
+
+.main .results .players-container{
+    display: flex;
+    gap: 20px;
+    flex-basis: 500px;
+    justify-content: space-around;
+}
+.main .results .players-container .player, 
+.main .results .players-container .computer{
+    flex-basis: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .results .players-container .player .choice, 
+.main .results .players-container .computer .choice{
+    flex-grow: 1;
+    height: 130;
+}
+
+.main .options{
+    display: flex;
+}
+
+.options .dummy{
+    flex: 1;
+}
+.options .container{
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.options img:hover{
+    scale: 1.1;
+}
+
+.footer{
+    background-color: black;
+    color:#FFEA00;
+    padding: 22px;
+}
+
+.choice img{
+    width: 100%;
+    height: 100%;
+}
